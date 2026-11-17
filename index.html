@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poolrooms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="view"></canvas>
+
+  <div id="menu" class="overlay">
+    <div class="card">
+      <p class="eyebrow">nivel 37 · sublimity</p>
+      <h1>POOLROOMS</h1>
+      <p class="lead">Un complejo infinito de piscinas vacías. No hay nadie. El agua está tibia.</p>
+      <label class="seed">semilla <input id="seed" type="text" maxlength="24" spellcheck="false" autocomplete="off"></label>
+      <button id="start">Entrar</button>
+      <ul class="keys">
+        <li><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> caminar · nadar</li>
+        <li><kbd>ratón</kbd> mirar</li>
+        <li><kbd>F</kbd> linterna</li>
+        <li><kbd>espacio</kbd> / <kbd>C</kbd> subir · bucear (solo en agua profunda)</li>
+      </ul>
+      <p class="note">Mejor con auriculares.</p>
+    </div>
+  </div>
+
+  <div id="loading" class="overlay hidden">
+    <div class="bar"><i id="progress"></i></div>
+    <p>llenando las piscinas…</p>
+  </div>
+
+  <div id="pause" class="overlay hidden"><p>clic para continuar</p></div>
+  <div id="hint" class="hidden">WASD moverse · F linterna · al nadar: espacio sube, C bucea</div>
+  <pre id="dbg" class="hidden"></pre>
+  <div id="fatal" class="overlay hidden"><p></p></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

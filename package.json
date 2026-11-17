@@ -1,0 +1,11 @@
+{
+  "name": "poolrooms",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Exploración procedural en primera persona de los Poolrooms",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node tools/check.mjs"
+  }
+}
